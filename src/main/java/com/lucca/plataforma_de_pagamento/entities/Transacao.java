@@ -1,15 +1,13 @@
 package com.lucca.plataforma_de_pagamento.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-
+import java.time.OffsetDateTime;
+@Builder
 @Entity
 @Table(name = "transacao")
 @AllArgsConstructor
@@ -24,7 +22,7 @@ public class Transacao {
 
     private BigDecimal valor;
 
-    private LocalDateTime data;
+    private OffsetDateTime data;
 
     @ManyToOne
     @JoinColumn(name = "remetente_id")
