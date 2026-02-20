@@ -18,7 +18,7 @@ public class UsuarioService {
 
     public Usuario cadastrarUsuario(Usuario usuario){
         Carteira carteira = new Carteira();
-        carteira.setSaldo(BigDecimal.ZERO);
+        carteira.setSaldo(BigDecimal.valueOf(500.00));
         carteira.setUsuario(usuario);
         usuario.setCarteira(carteira);
 
