@@ -25,9 +25,7 @@ public class UsuarioMapper {
                 .id(usuario.getId())
                 .tipo(usuario.getTipo())
                 .nome(usuario.getNome())
-                .cpf_cnpj(usuario.getCpf_cnpj())
                 .email(usuario.getEmail())
-                .senha(usuario.getSenha())
                 .carteira(usuario.getCarteira())
                 .build();
     }
