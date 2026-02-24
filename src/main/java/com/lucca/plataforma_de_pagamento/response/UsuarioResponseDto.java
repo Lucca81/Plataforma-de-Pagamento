@@ -8,7 +8,9 @@ import lombok.Builder;
 public record UsuarioResponseDto(Long id,
                                  TipoDeUsuario tipo,
                                  String nome,
+                                 String cpf_cnpj,
                                  String email,
+                                 String senha,
                                  Carteira carteira
 
 
